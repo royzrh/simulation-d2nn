@@ -1,0 +1,61 @@
+# ---- 数据：MNIST 原始文件体积大且可重新下载 ----
+data/
+**/data/MNIST/
+
+# ---- 模型权重与训练检查点 ----
+*.pt
+*.pth
+*.ckpt
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ---- macOS ----
+.DS_Store
+._*
+
+# ---- 编辑器 ----
+.vscode/
+.idea/
+
+# ---- 大型数据集与实验产物：只提交代码 ----
+imaging_reproduction/data/
+imaging_reproduction/data_imagenet_train10000/
+imaging_reproduction/misc/
+imaging_reproduction/results/
+imaging_reproduction/references/
+1550/results/
+1550_d2nn/runs/
+paper_reproduction/results/
+
+# 结果目录里保留 .py，其余产物不入库
+1550/test/*.pt
+1550/test/*.png
+1550/test/*.json
+1550/test/*.csv
+1550/test/*.gz
+1550/layer_comparison/results/
+1550/test/results/
+1550/test/mpl/
+paper_reproduction/mnist_extension/results/
+paper_reproduction/mnist_extension/*.pt
+paper_reproduction/mnist_extension/*.png
+
+# 临时文件与二进制数组
+tmp/
+*.npy
+*.npz
+*.ply
+*.parquet
+
+# 编辑器/手动备份文件
+*.bak_*
+*.bak
+
+# 根目录结果图也不入库
+results/
